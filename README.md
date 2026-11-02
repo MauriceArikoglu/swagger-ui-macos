@@ -1,6 +1,8 @@
 # Swagger UI for macOS
 
-**Bracket** is a native macOS viewer for local Swagger and OpenAPI JSON or YAML files. Drop a definition into the window, or open it with **⌘O**. Use **⌘R** to reload changes from disk.
+**Bracket** is a native macOS app that brings Swagger UI to local Swagger and OpenAPI files. Use it as a local Swagger UI viewer to open JSON or YAML API definitions, browse endpoints and schemas, and test API requests from a Mac window.
+
+Drop a definition into the app, or open it with **⌘O**. Use **⌘R** to reload changes from disk.
 
 The repository does **not** include Swagger UI's distribution files. Install them with npm before compiling. The build takes the required files from `node_modules/swagger-ui-dist` and includes them in the finished app. Node.js and npm are build dependencies; the finished app runs without them or a separate server.
 
@@ -96,6 +98,23 @@ To run the actual app's smoke check after a Release build:
 ```
 
 The smoke check verifies the native start-screen icon, pasteboard drop handling, YAML and JSON rendering, special-character filenames, Swagger 2.0, operation expansion, changed-file reload, parser errors, and local resource loading. It writes screenshots and `report.json`, then exits. It does not simulate a physical Finder drag or execute API operations.
+
+## Documentation
+
+Read the [Bracket documentation](https://mauricearikoglu.github.io/swagger-ui-macos/) on GitHub Pages.
+
+The site uses the Nextra docs theme, Next.js static export, and Pagefind search. Its main page is generated from this README on each build. Edit this file to keep the repository and documentation in sync. The build also copies the current app icon and converts the license links to GitHub URLs.
+
+To build the documentation with Node.js 24:
+
+```sh
+npm ci --prefix docs
+npm run --prefix docs export
+```
+
+The static site is written to `docs/out`. For local development, run `npm run --prefix docs dev` and open `http://localhost:3000`.
+
+The **Pages: Build and Push** action validates documentation changes in pull requests and deploys changes from `main`. You can also run it manually from GitHub Actions. GitHub Pages uses **GitHub Actions** as its publishing source.
 
 ## Icon and source layout
 

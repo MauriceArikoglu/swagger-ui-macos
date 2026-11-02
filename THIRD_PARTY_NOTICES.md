@@ -9,3 +9,5 @@ Swagger UI's distribution files are not committed to this repository. `npm insta
 When compiling the app, the build copies the upstream `LICENSE`, `NOTICE`, and `swagger-ui-bundle.js.LICENSE.txt` from `node_modules/swagger-ui-dist` alongside the required viewer assets into `Bracket.app/Contents/Resources/Web/vendor`. The alternate Swift Package build places these files in its resource bundle instead.
 
 The Bracket icon is an original vector drawing inspired by the Swagger logo, with square brackets in place of curly braces. Bracket is an independent wrapper and is not an official Swagger product.
+
+The documentation site uses Next.js, React, Nextra, and Pagefind under their MIT licenses. These are documentation build dependencies and are not included in the macOS app. `docs/package-lock.json` records the exact dependency versions and license metadata.

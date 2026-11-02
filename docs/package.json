@@ -1,0 +1,32 @@
+{
+  "name": "swagger-ui-macos-docs",
+  "version": "1.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "description": "Bracket documentation: a local Swagger UI app for macOS",
+  "scripts": {
+    "dev": "node scripts/prepare-content.mjs && next dev --webpack",
+    "build": "node scripts/prepare-content.mjs && next build --webpack && pagefind --site out --output-subdir _pagefind && test -f out/_pagefind/pagefind.js && touch out/.nojekyll",
+    "export": "npm run build"
+  },
+  "dependencies": {
+    "next": "16.2.12",
+    "nextra": "4.6.1",
+    "nextra-theme-docs": "4.6.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "pagefind": "1.5.2",
+    "typescript": "6.0.3"
+  },
+  "overrides": {
+    "zod": "4.3.6"
+  },
+  "engines": {
+    "node": ">=24.22.2 <25"
+  }
+}
