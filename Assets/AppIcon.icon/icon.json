@@ -1,0 +1,46 @@
+{
+  "fill": {
+    "linear-gradient": [
+      "srgb:0.30588,0.92157,0.38039,1.00000",
+      "srgb:0.04314,0.71373,0.23529,1.00000"
+    ]
+  },
+  "groups": [
+    {
+      "layers": [
+        {
+          "image-name": "LeftBracket.svg",
+          "name": "Left square bracket",
+          "glass": true
+        },
+        {
+          "image-name": "RightBracket.svg",
+          "name": "Right square bracket",
+          "glass": true
+        },
+        {
+          "image-name": "Dots.svg",
+          "name": "Three dots",
+          "glass": true
+        }
+      ],
+      "lighting": "individual",
+      "specular": true,
+      "blur-material": 0.1,
+      "shadow": {
+        "kind": "layer-color",
+        "opacity": 0.5
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.5
+      }
+    }
+  ],
+  "supported-platforms": {
+    "circles": [
+      "watchOS"
+    ],
+    "squares": "shared"
+  }
+}

@@ -1,0 +1,71 @@
+openapi: 3.0.3
+info:
+  title: Pet Store API
+  description: A small example definition for local app validation.
+  version: 1.0.0
+servers:
+  - url: https://example.invalid
+tags:
+  - name: Pets
+    description: Find and manage pets.
+paths:
+  /pets:
+    get:
+      tags: [Pets]
+      summary: List pets
+      operationId: listPets
+      responses:
+        '200':
+          description: A list of pets.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+    post:
+      tags: [Pets]
+      summary: Add a pet
+      operationId: addPet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+      responses:
+        '201':
+          description: Pet created.
+  /pets/{petId}:
+    get:
+      tags: [Pets]
+      summary: Find a pet
+      operationId: getPet
+      parameters:
+        - name: petId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: A pet.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+components:
+  schemas:
+    Pet:
+      type: object
+      required: [id, name]
+      properties:
+        id:
+          type: integer
+          example: 7
+        name:
+          type: string
+          example: Mochi
+        status:
+          type: string
+          enum: [available, adopted]

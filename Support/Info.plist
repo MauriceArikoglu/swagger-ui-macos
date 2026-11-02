@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleName</key><string>Bracket</string>
+  <key>CFBundleDisplayName</key><string>Bracket</string>
+  <key>CFBundleIdentifier</key><string>app.nativesystems.bracket</string>
+  <key>CFBundleExecutable</key><string>Bracket</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.0.2</string>
+  <key>CFBundleVersion</key><string>3</string>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>CFBundleIconName</key><string>AppIcon</string>
+  <key>LSMinimumSystemVersion</key><string>13.0</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSPrincipalClass</key><string>NSApplication</string>
+  <key>NSAppTransportSecurity</key><dict>
+    <key>NSAllowsArbitraryLoadsInWebContent</key><true/>
+    <key>NSAllowsLocalNetworking</key><true/>
+  </dict>
+  <key>CFBundleDocumentTypes</key><array><dict>
+    <key>CFBundleTypeName</key><string>Swagger or OpenAPI definition</string>
+    <key>CFBundleTypeRole</key><string>Viewer</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>LSItemContentTypes</key><array><string>public.json</string><string>public.yaml</string></array>
+    <key>CFBundleTypeExtensions</key><array><string>json</string><string>yaml</string><string>yml</string></array>
+  </dict></array>
+  <key>UTImportedTypeDeclarations</key><array><dict>
+    <key>UTTypeIdentifier</key><string>public.yaml</string>
+    <key>UTTypeDescription</key><string>YAML document</string>
+    <key>UTTypeConformsTo</key><array><string>public.text</string></array>
+    <key>UTTypeTagSpecification</key><dict>
+      <key>public.filename-extension</key><array><string>yaml</string><string>yml</string></array>
+      <key>public.mime-type</key><array><string>application/yaml</string><string>text/yaml</string></array>
+    </dict>
+  </dict></array>
+</dict></plist>

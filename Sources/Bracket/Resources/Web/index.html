@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Bracket</title>
+  <link rel="icon" href="app-icon.png" type="image/png">
+  <link rel="stylesheet" href="vendor/swagger-ui.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main id="empty" class="empty">
+    <div class="welcome">
+      <img class="app-mark" src="app-icon.png" alt="Bracket" width="96" height="96">
+      <h1>Drop an API file.</h1>
+      <p>Your API, ready to explore.<br>Open a Swagger or OpenAPI definition to get started.</p>
+      <button id="choose" class="choose" type="button">Choose a file… <kbd>⌘O</kbd></button>
+      <div class="formats" aria-label="Supported formats">JSON <span>·</span> YAML <span>·</span> YML</div>
+    </div>
+    <footer>Swagger UI, bundled and ready. No setup required.</footer>
+  </main>
+  <div id="loading" class="loading" role="status" hidden>
+    <div class="loading-label">Opening your API definition…</div>
+    <div class="skeleton wide"></div><div class="skeleton medium"></div>
+    <div class="skeleton operation"></div><div class="skeleton operation"></div><div class="skeleton operation"></div>
+  </div>
+  <div id="file-bar" class="file-bar" hidden>
+    <div class="file-identity"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" aria-hidden="true"><path d="M9.5 1H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5.5L9.5 1Z" stroke="currentColor" stroke-width="1.2"/><path d="M9 1v5h5M5 10h6M5 13h4" stroke="currentColor" stroke-width="1.2"/></svg><span id="file-name"></span><span id="file-format" class="file-format"></span></div>
+    <span class="drop-hint">Drop another file to switch</span>
+  </div>
+  <div id="error" class="error" role="alert" hidden></div>
+  <div id="swagger-ui"></div>
+  <div id="drop-target" class="drop-target" aria-hidden="true" hidden><div><img src="app-icon.png" alt="" width="64" height="64"><strong>Drop to open</strong><span>Swagger or OpenAPI · JSON or YAML</span></div></div>
+  <script src="vendor/swagger-ui-bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

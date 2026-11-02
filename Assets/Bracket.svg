@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Bracket app icon</title>
+  <desc>Soft-cornered white square brackets and three dots on a green gradient. Flat vector counterpart of the native glass layers in Assets/AppIcon.icon.</desc>
+  <defs><linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4eeb61"/><stop offset="1" stop-color="#0bb63c"/></linearGradient></defs>
+  <rect x="80" y="80" width="864" height="864" rx="190" fill="url(#green)"/>
+  <path xmlns="http://www.w3.org/2000/svg" fill="#fff" d="M383 260H276Q260 260 260 276V748Q260 764 276 764H383Q399 764 399 748V714Q399 698 383 698H342Q326 698 326 682V342Q326 326 342 326H383Q399 326 399 310V276Q399 260 383 260Z" />
+<path xmlns="http://www.w3.org/2000/svg" fill="#fff" d="M641 260H748Q764 260 764 276V748Q764 764 748 764H641Q625 764 625 748V714Q625 698 641 698H682Q698 698 698 682V342Q698 326 682 326H641Q625 326 625 310V276Q625 260 641 260Z" />
+<circle xmlns="http://www.w3.org/2000/svg" fill="#fff" cx="430" cy="512" r="25" />
+  <circle xmlns="http://www.w3.org/2000/svg" fill="#fff" cx="512" cy="512" r="25" />
+  <circle xmlns="http://www.w3.org/2000/svg" fill="#fff" cx="594" cy="512" r="25" />
+
+</svg>
