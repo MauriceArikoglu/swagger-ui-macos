@@ -8,7 +8,6 @@ The repository does **not** include Swagger UI's distribution files. Install the
 
 - A Mac with Xcode 26 or later and the macOS SDK.
 - Node.js with npm, for downloading Swagger UI.
-- Access to this private GitHub repository.
 
 The finished app supports macOS 13 or later, on Apple Silicon and Intel. Running the tests requires macOS 14 or later.
 
@@ -113,4 +112,10 @@ To edit the icon, open `Assets/AppIcon.icon` in Icon Composer. Xcode compiles it
 
 `node_modules`, generated Swagger UI staging files, build outputs, Xcode user data, credentials, local settings, and editor metadata are excluded from Git. Do not add private API definitions or authentication files to the repository.
 
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream licenses. Bracket is an independent wrapper for [Swagger UI](https://github.com/swagger-api/swagger-ui).
+## License
+
+Copyright (C) 2026 MauriceArikoglu.
+
+Bracket is licensed under the GNU Affero General Public License v3.0 only (`AGPL-3.0-only`). See [LICENSE](LICENSE) for the full terms.
+
+Third-party components retain their own licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream licenses. Bracket is an independent wrapper for [Swagger UI](https://github.com/swagger-api/swagger-ui).
